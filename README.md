@@ -260,4 +260,6 @@ A lightweight STRIDE-style review of the system.
 **Russel Danao** — Cybersecurity Specialist (in training) with AI-assisted workflows
 [GitHub](https://github.com/russeldanao) · [LinkedIn](https://www.linkedin.com/in/razdanao)
 
+More of my work: [cybersecurity-portfolio](https://github.com/russeldanao/cybersecurity-portfolio) — networking, cryptography, Windows Server AD DS, cloud, and detection/mitigation labs.
+
 > Personal, non-commercial project. Navidrome and Tailscale are the property of their respective owners. Use it only with music you have the right to use.
