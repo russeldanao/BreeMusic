@@ -1,0 +1,25 @@
+# Xcode per-user state (leaks machine paths, window state)
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+.DS_Store
+
+# Build output
+build/
+DerivedData/
+*.dSYM.zip
+*.ipa
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Secrets and local config — never commit
+.env
+*.env
+Secrets.xcconfig
+Config.local.*
+*.p12
+*.mobileprovision
+*.pem
+*.key

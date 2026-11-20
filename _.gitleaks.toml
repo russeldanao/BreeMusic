@@ -1,0 +1,28 @@
+# Extends the default gitleaks ruleset.
+title = "BreeMusic gitleaks config"
+
+[extend]
+useDefault = true
+
+# Custom rules for this project's stack
+[[rules]]
+id = "tailscale-auth-key"
+description = "Tailscale auth key"
+regex = '''tskey-[a-zA-Z0-9]+-[a-zA-Z0-9]+'''
+tags = ["tailscale", "vpn"]
+
+[[rules]]
+id = "tailnet-hostname"
+description = "Tailnet MagicDNS hostname (reveals tailnet name)"
+regex = '''[a-z0-9-]+\.[a-z0-9-]+\.ts\.net'''
+tags = ["tailscale", "privacy"]
+
+[[rules]]
+id = "tailscale-cgnat-ip"
+description = "Tailscale 100.x CGNAT address"
+regex = '''\b100\.(6[4-9]|[7-9][0-9]|1[01][0-9]|12[0-7])\.\d{1,3}\.\d{1,3}\b'''
+tags = ["tailscale", "privacy"]
+
+[allowlist]
+description = "Ignore binary screenshots"
+paths = ['''docs/images/.*''']
